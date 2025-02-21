@@ -12,7 +12,6 @@ class MainRequest(BaseModel):
 @router.post("/main")
 async def main_endpoint(request: MainRequest):
     try:
-        #df = calc_hvr_stats(request.board, request.hero_hand, request.villain_range)
         # implement functionality here
         print(f"param1={request.param1} param2={request.param2}")
     except Exception as e:
